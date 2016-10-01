@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+    font-size: 13pt;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: block;
+    background: black;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    hr.bar {
+        border: white 1px solid;
+        box-shadow:
+        0 0 5px 1px cyan,
+        0 0 10px 1px cyan,
+        0 0 15px 1px cyan;
+    }
+
+    #topbar {
+        color: white;
+        font-weight: bold;
+        height: 2em;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            li  {
+                a {
+                    display: block;
+                    padding: {
+                        top: .5em;
+                        bottom: .5em;
+                        left: 2em;
+                        right: 2em;
+                    }
+                    transition: box-shadow .5s ease-in-out;
+                }
+            }
+
+            li a:hover {
+                box-shadow: 0 0 5px 2px cyan, 0 0 5px 2px cyan inset;
+                transition: box-shadow .25s ease-in-out;
+            }
+        }
+    }
+}
+
+main {
+    margin: {
+        left: 10em;
+        right: 10em;
+    }
+    padding: {
+        top: 5em;
+    }
+    color: white;
+    h1 {
+        font-size: 4em;
+        text-align: center;
+        font-weight: bold;
+        &:after {
+            content: "⚐";
+            text-shadow:
+            0 0 5px cyan,
+            0 0 8px cyan,
+            0 0 10px cyan,
+            0 0 15px cyan;
+        }
+        &:before {
+            content: "";
+            margin-left: 1em;
+        }
+    }
+    h1.date {
+        font-size: 2.5em;
+        padding: {
+            top: 1em;
+            bottom: 1em;
+        }
+        &:after {
+            content: none;
+        }
+    }
+    h2 {
+        text-align: right;
+        font-family: serif;
+        font-weight: bold;
+        &:before, &:after {
+            content: "-";
+            padding: .5em;
+        }
+    }
+
+    section {
+        h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: {
+                top: 2em;
+                bottom: 1em;
+            }
+            &:before {
+                content: "⚐";
+                text-shadow:
+                0 0 1px cyan,
+                0 0 3px cyan,
+                0 0 5px cyan,
+                0 0 7px cyan;
+                padding: {
+                    right: .25em;
+                }
+            }
+        }
+        h4.newsdate {
+            &:after {
+                content: ": ";
+                margin-right: 1em;
+            }
+        }
+        p {
+            margin: {
+                left: 1em;
+            }
+            padding: 1em;
+            &.en {
+                display: none;
+            }
+            a {
+                border-bottom: white 1px dotted;
+                transition: text-shadow .5s ease-in-out;
+            }
+            a:hover {
+                text-shadow:
+                0 0 1px cyan,
+                0 0 3px cyan;
+                transition: text-shadow .3s ease-in-out;
+            }
+            a:after {
+                content: "✈";
+            }
+        }
+        article {
+            margin: {
+                left: 1em;
+            }
+            padding-left: 1em;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+    .host {
+        text-align: right;
+        font-weight: bold;
+        &:before, &:after {
+            content: "＊";
+        }
+    }
+}

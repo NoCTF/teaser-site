@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>NoCTF 2016 Hokkaido</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script>
+     function chlang() {
+       if (location.hash == '#en') {
+         var ens = document.getElementsByClassName('en');
+         for (var i=0; i<ens.length; i++) {
+           ens[i].style.display = "inherit";
+         }
+         var jas = document.getElementsByClassName('ja');
+         for (var i=0; i<jas.length; i++) {
+           jas[i].style.display = "none";
+         }
+         var link = document.getElementById('lang');
+         link.href = "#ja";
+         link.innerHTML = "JAPANESE";
+       }
+     }
+     window.onload = chlang
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="topbar">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#en" target="_blank">ENGLISH</a></li>
+        </ul>
+        <hr class="bar"/>
+      </nav>
+    </header>
+    <main>
+      <h1>NoCTF</h1>
+      <h2>Not only CTF</h2>
+      <h1 class="date">2016/12/11(SUN) Hokkaido Sapporo</h1>
+      <section id="about">
+        <h3>ABOUT NoCTF</h3>
+        <p class="ja">
+          NoCTFは<i>Not only <abbr title="Capture the Flag">CTF</abbr></i>の意味です。CTFより参加しやすく、エキサイティングな、新たなエンターテインメントを提案します。
+        </p>
+        <p class="en">
+          NoCTF means <i>Not only <abbr title="Capture the Flag">CTF</abbr></i>. We propose easier to take part in, more exciting, new entertainment.
+        </p>
+      </section>
+      <section id="news">
+        <h3>NEWS</h3>
+        <article>
+          <h4 class="newsdate">2016/09/25</h4>
+          <p class="ja">スタッフを募集しています。登録はこちらから: <a href="https://goo.gl/forms/UcrUR5sAKQNiXxJi1">スタッフに参加する</a></p>
+          <p class="en">We're recruiting some staffs. Please Register from: <a href="https://goo.gl/forms/UcrUR5sAKQNiXxJi1">Register as staff</a></p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p class="host">NoCTF実行委員会</p>
+    </footer>
+  </body>
+</html>
