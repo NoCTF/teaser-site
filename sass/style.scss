@@ -22,6 +22,10 @@ body {
     height: 100%;
 }
 
+del {
+    text-decoration: line-through;
+}
+
 header {
     position: fixed;
     top: 0;
