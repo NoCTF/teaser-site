@@ -179,4 +179,46 @@ footer {
             content: "＊";
         }
     }
+
+    #staffs {
+        margin: {
+            left: 25vw;
+            right: 25vw;
+        }
+        h3 {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            padding: {
+                right: 1.5em;
+            }
+            &:before {
+                color: white;
+                content: "⚐";
+                text-shadow:
+                0 0 1px cyan,
+                0 0 3px cyan,
+                0 0 5px cyan,
+                0 0 7px cyan;
+                padding: {
+                    right: .25em;
+                }
+            }
+        }
+        div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            p.staff {
+                img {
+                    width: 4em;
+                    height: 4em;
+                }
+                width: 5em;
+                height: 5em;
+                margin: 1em;
+                text-align: center;
+            }
+        }
+    }
 }
