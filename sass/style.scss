@@ -81,21 +81,13 @@ main {
         font-size: 4em;
         text-align: center;
         font-weight: bold;
-        &:after {
-            content: "⚐";
-            text-shadow:
-            0 0 5px cyan,
-            0 0 8px cyan,
-            0 0 10px cyan,
-            0 0 15px cyan;
-        }
         &:before {
             content: "";
             margin-left: 1em;
         }
     }
     #title {
-        width: 10em;
+        width: 20em;
     }
     h1.date {
         font-size: 2.5em;
