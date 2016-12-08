@@ -165,6 +165,29 @@ main {
             display: flex;
             align-items: center;
         }
+        section#matsu, section#take, section#ume {
+            h4 {
+                text-align: center;
+                font-family: serif;
+                font-weight: bold;
+                margin-bottom: 1em;
+                &:before, &:after {
+                    margin: 0 1em;
+                    content: "-";
+                }
+            }
+            .horizon {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                a {
+                    width: 20%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 
