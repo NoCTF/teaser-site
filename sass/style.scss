@@ -27,6 +27,10 @@ del {
     text-decoration: line-through;
 }
 
+a:focus, *:Focus {
+    outline: none;
+}
+
 header {
     position: fixed;
     top: 0;
