@@ -113,7 +113,20 @@ main {
             padding: .5em;
         }
     }
-
+    section.partin {
+        text-align: center;
+        .btn {
+            font-size: 2em;
+            padding: .5em;
+            border: white solid 2px;
+            box-shadow: 0 0 5px 2px cyan, 0 0 5px 2px cyan inset;
+            transition: box-shadow ease-in-out .3s;
+            &:hover {
+                box-shadow: 0 0 5px 4px cyan, 0 0 5px 4px cyan inset;
+                transition: box-shadow ease-in-out .3s;
+            }
+        }
+    }
     section {
         h3 {
             font-size: 1.5em;
