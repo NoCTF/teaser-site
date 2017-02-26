@@ -216,6 +216,20 @@ main {
         section#ume .horizon a {
             width: 20%;
         }
+        section#personal {
+            margin-bottom: 3em;
+            text-align: center;
+            h4 {
+                font-size: 1.5em;
+                font-family: serif;
+                font-weight: bold;
+                margin-bottom: 1em;
+                &:before, &:after {
+                    margin: 0 1em;
+                    content: "-";
+                }
+            }
+        }
     }
 }
 
